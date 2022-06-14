@@ -7,15 +7,24 @@ package jana60.geometria;
 
 public class Rettangolo {
 	// attributi
-	int base;
-	int altezza;
+	int baseRettangolo;
+	int altezzaRettangolo;
 
 	// metodi
 	int areaRettangolo() {
-		return base * altezza;
+		return baseRettangolo * altezzaRettangolo;
 	}
 
 	int perimetroRettangolo() {
-		return (base + altezza) * 2;
+		return (baseRettangolo + altezzaRettangolo) * 2;
 	}
+
+	void stampaPerimetro() {
+		System.out.println("Il perimetro è: " + perimetroRettangolo());
+	}
+
+	void stampaArea() {
+		System.out.println("L'area è: " + areaRettangolo());
+	}
+
 }
